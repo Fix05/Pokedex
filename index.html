@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="flex">
+
+    </main>
+
+
+    <template class='tpm' id="template_card">
+
+        <aside class="search-button">
+            <div class="container">
+                <span class="lupa">
+                    <i class="fa fa-search"></i>
+                </span>
+                <input type="search" id="search" tabindex="0" placeholder="¿Search for a pokemon?" autocomplete="off"/>
+            </div>
+        </aside>
+
+        <div class="results">
+            <ul class="list-group">          
+            </ul>
+        </div>
+
+
+
+        <div class="change_pkm">
+
+            <img id="previous" class="changeButton" src="images/Icons/left-arrow.png" alt="">
+
+            <img id="next" class="changeButton" src="images/Icons/right-arrow.png" alt="">
+
+        </div>
+
+        <article class="card" id="card">
+
+
+
+            <div id="popUp" class="stats">
+                <button id="closeStats">X Close</button>
+                <div class="contentPopUp">
+
+
+                </div>
+            </div>
+
+
+            <div id="popUp" class="info">
+                <button id="closeInfo">X Close</button>
+                <div class="contentPopUp">
+                    <div class="weight">
+                        <h2>Weight</h2>
+                    </div>
+                    <div class="base_exp">
+                        <h2>Base experience</h2>
+                    </div>
+                    <div class="height">
+                        <h2>Height</h2>
+                    </div>
+                    <div class="capture_rate">
+                        <h2>Capture rate</h2>
+                    </div>
+                    <div class="egg_group">
+                        <h2>Egg group</h2>
+                    </div>
+                    <div class="ability">
+                        <h2>Ability</h2>
+                    </div>
+                
+                </div>
+            </div>
+
+            <img src="./images/bg-pattern-card.svg" alt="image header" class="card_header">
+            <div class="card_body">
+
+                <img src="./images/image-victor.jpg" alt="profile image" class="card_body_img">
+                <h1 class="card_body_title">
+
+                </h1>
+
+
+                <div class="card_body_text">
+
+                    <img id="img1" src="" alt="">
+                    <img id="img2" src="" alt="">
+
+                </div>
+
+            </div>
+            <div class="card_footer">
+                <div class="card_footer_social">
+                    <img id='stats' src="images/Icons/stats1.png" alt="">
+                    <p>Stats</p>
+                </div>
+                <div class="card_footer_social">
+                    <img id='weakness' src="images/Icons/debilidades1.png" alt="">
+                    <p>Weakness</p>
+                </div>
+                <div class="card_footer_social">
+                    <img id="info" src="images/Icons/info.png" alt="">
+                    <p>Info</p>
+                </div>
+
+
+                <div id="popUp" class="weakness">
+                    <button id="closeWeakness">X Close</button>
+
+                    <div class="contentPopUp">
+                    </div>
+
+                </div>
+            </div>
+        </article>
+
+
+    </template>
+
+    <script src="searchBox.js"></script>
+    <script src="damage.js"></script>
+    <script src="statsChart.js"></script>
+    <script src="print.js"></script>
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
